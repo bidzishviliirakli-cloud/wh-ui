@@ -19,6 +19,8 @@ import DeveloperInnerPage from './pages/developers/DeveloperInnerPage'
 import UploadPage from './pages/upload/Upload'
 import 'leaflet/dist/leaflet.css'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 
 export default function App() {
@@ -43,6 +45,7 @@ export default function App() {
             <Route path='/blogs/:id' element={<BlogsInner />} />
           </Routes>
           <Analytics />
+          <SpeedInsights />
           <Footer />
         </Provider>
       </Router>
