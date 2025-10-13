@@ -18,6 +18,8 @@ import DevelopersPage from './pages/developers/DevelopersPage'
 import DeveloperInnerPage from './pages/developers/DeveloperInnerPage'
 import UploadPage from './pages/upload/Upload'
 import 'leaflet/dist/leaflet.css'
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function App() {
   const { context } = useContextUpdateFromSocket()
@@ -40,6 +42,7 @@ export default function App() {
             <Route path='/blogs' element={<Blogs />} />
             <Route path='/blogs/:id' element={<BlogsInner />} />
           </Routes>
+          <Analytics />
           <Footer />
         </Provider>
       </Router>
