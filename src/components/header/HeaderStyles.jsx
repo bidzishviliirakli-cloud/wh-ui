@@ -16,7 +16,8 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 113.5px;
-  background-color: #ffffff;
+  background-color: ${colors.headerBackground};
+  
   box-shadow: ${(props) => (props.isFixed ? '0 2px 4px rgba(0, 0, 0, 0.1)' : '')};
   padding: 0px 40px;
   width: 100%;

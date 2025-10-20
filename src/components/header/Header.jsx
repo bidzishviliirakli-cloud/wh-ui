@@ -63,7 +63,6 @@ export default function Header() {
   const handleLocaleChange = (value) => {
     i18n.changeLanguage(value)
     setSearchParams({ locale: value })
-    console.log('en ge')
     setLocale({ locale: value })
   }
 
@@ -94,11 +93,6 @@ export default function Header() {
             <HeaderLink>{t('Properties')}</HeaderLink>
           </Link>
         </li>
-        {/* <li>
-          <Link to='/developers' onClick={() => handleMenuNavigationCleanup()}>
-            <HeaderLink>{t('Developers')}</HeaderLink>
-          </Link>
-        </li> */}
         <li>
           <Link to='/about' onClick={() => handleMenuNavigationCleanup()}>
             <HeaderLink>{t('About')}</HeaderLink>
