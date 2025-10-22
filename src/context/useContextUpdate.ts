@@ -203,7 +203,7 @@ export default function useContextUpdateFromSocket() {
     axios
       .get(url)
       .then((response) => {
-        const data = response.data.data
+        const data = response.data.data.reverse();
         setContext((ctx) => {
           return { ...ctx, properties: data, loadingProperties: false }
         })
