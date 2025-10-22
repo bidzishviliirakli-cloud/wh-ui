@@ -10,6 +10,7 @@ export const FooterWrapper = styled.div`
   padding: 3rem 1rem 2rem 3rem;
   border-top: 1px solid ${colors.border};
   width: 100%;
+  background-color: ${colors.white};
 `
 
 export const Top = styled.div`
