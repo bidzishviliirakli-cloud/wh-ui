@@ -103,6 +103,7 @@ export default function UploadPage() {
 
   async function handleSubmit(e) {
     e.preventDefault()
+    console.log(formData)
 
     if (!validateForm()) {
       setSubmitMessage(t('PleaseuploadMsg'))
